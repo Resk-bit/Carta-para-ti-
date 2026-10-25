@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Un pequeño universo para ti</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #e5edff;
+  font-family: Georgia, serif;
+  background: radial-gradient(ellipse at top, #233d79, #10172f 55%, #050914);
+  overflow-x: hidden;
+}
+.stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(2px 2px at 20% 25%, white 99%, transparent),
+    radial-gradient(1px 1px at 75% 18%, #a9d8ff 99%, transparent),
+    radial-gradient(2px 2px at 85% 65%, white 99%, transparent),
+    radial-gradient(1px 1px at 35% 80%, #b7c9ff 99%, transparent),
+    radial-gradient(2px 2px at 55% 45%, white 99%, transparent);
+  background-size: 180px 180px;
+  opacity: .8;
+}
+main {
+  position: relative;
+  width: min(90%, 620px);
+  margin: 0 auto;
+  padding: 65px 0;
+}
+header { text-align: center; margin-bottom: 32px; }
+.moon { font-size: 48px; }
+h1 { font-size: 2rem; font-weight: normal; }
+.subtitle { color: #b8cbff; font-style: italic; }
+.card {
+  padding: 28px 23px;
+  background: #101b36d9;
+  border: 1px solid #718dcf70;
+  border-radius: 20px;
+  box-shadow: 0 0 35px #4d76c522;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+button {
+  display: block;
+  margin: 25px auto 0;
+  padding: 13px 20px;
+  border: 1px solid #a6c4ff;
+  border-radius: 30px;
+  color: white;
+  background: #263f78;
+  font-size: 1rem;
+  cursor: pointer;
+}
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #b8cbff;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<main>
+<header>
+  <div class="moon"></div>
+  <h1>Un pequeño universo para ti</h1>
+  <p class="subtitle">Para alguien que hace especial mi mundo</p>
+</header>
+
+<article class="card">
+Mi amor:
+
+A veces, cuando escucho una canción, me imagino en un mundo distinto. Un bosque cubierto de nieve, el cielo lleno de estrellas y una aurora iluminándolo todo.
+
+Y en ese lugar estás tú.
+
+Me imagino sentados uno al lado del otro, sin tener que apresurarnos, hablando de cualquier cosa mientras el frío nos rodea y el cielo parece no tener final.
+
+No sé cómo explicarlo, pero hay canciones que se sienten como un lugar al que quisiera ir contigo. Para mí, "Roi" es una de ellas.
+
+Me encanta escucharte, conocer tus pensamientos y descubrir esas pequeñas cosas que te hacen ser tú. Ojalá algún día podamos compartir muchos momentos bonitos, incluso los más sencillos.
+
+Si pudiera guardar un instante para volver a él cuando te extrañe, elegiría uno así: tú, yo, las estrellas y la tranquilidad de saber que estamos juntos.
+
+Gracias por formar parte de mi pequeño universo.
+</article>
+
+<button onclick="document.getElementById('music').scrollIntoView({behavior:'smooth'});">
+Escuchar Roi
+</button>
+
+<footer id="music">
+  <p>Una canción para acompañar esta carta</p>
+  <a href="https://open.spotify.com/search/Roi%20Videoclub"
+     target="_blank" rel="noopener"
+     style="color:#c6d9ff;">
+     Abrir "Roi" de Videoclub en Spotify
+  </a>
+  <p>Imagina que estamos bajo el mismo cielo.</p>
+</footer>
+</main>
+</body>
+</html>
